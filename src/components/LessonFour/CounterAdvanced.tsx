@@ -38,7 +38,6 @@ const CounterAdvanced = () => {
     const resetCount = () => {
         setState({
             counter: 0,
-            lastAction: "reset",
             time: getCurrentTime(),
         })
     }
@@ -64,7 +63,6 @@ const CounterAdvanced = () => {
                     disabled={state.counter === 0}
                 />
             </div>
-
             {
                 state.lastAction && (
                     <p className="text-center pt-8">
@@ -72,7 +70,6 @@ const CounterAdvanced = () => {
                         <strong>{state.time}</strong>
                     </p>
                 )
-
             }
         </>
     )
