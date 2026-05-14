@@ -6,12 +6,12 @@ type ButtonProps = {
 }
 
 const CounterButton = (
-    {label, onClick, disabled=false, addClasses="bg-cf-dark-grey"}: ButtonProps) => {
+    {label, onClick, disabled=false, addClasses="bg-cf-dark-gray"}: ButtonProps) => {
     return (
         <>
             <button
-                className={`disabled:bg-cd-gray text-white py-2 px-4 ${addClasses}`}
-                // className={"disabled:bg-cd-gray text-white py-2 px-4 " + addClasses }
+                className={`disabled:bg-cf-gray text-white py-2 px-4 ${addClasses}`}
+                // className={"disabled:bg-cf-gray text-white py-2 px-4 " + addClasses }
                 onClick={onClick}
                 disabled={disabled}
             >

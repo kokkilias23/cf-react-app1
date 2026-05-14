@@ -2,17 +2,20 @@ import Header from './Header';
 import Footer from './Footer';
 
 interface LayoutProps {
-    children: React.ReactNode;
+  children: React.ReactNode;
+  addClasses?: string;
 }
 
-const Layout = ({children}:LayoutProps) => {
-    return (
-        <>
-            <Header/>
-            <main className="container mx-auto min-h-[95vh] pt-35">{children}</main>
-            <Footer/>
-        </>
-    )
+const Layout = ({children, addClasses}:LayoutProps) => {
+  return (
+    <>
+      <div className={addClasses}>
+        <Header/>
+        <main className="container mx-auto min-h-[95vh]">{children}</main>
+        <Footer/>
+      </div>
+    </>
+  )
 }
 
 export default Layout;
