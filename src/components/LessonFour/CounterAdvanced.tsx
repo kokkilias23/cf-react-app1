@@ -38,6 +38,7 @@ const CounterAdvanced = () => {
     const resetCount = () => {
         setState({
             counter: 0,
+            lastAction: "Reset",
             time: getCurrentTime(),
         })
     }
@@ -66,7 +67,7 @@ const CounterAdvanced = () => {
             {
                 state.lastAction && (
                     <p className="text-center pt-8">
-                        Last Change:<strong>{state.lastAction } </strong> at{" "}
+                        Last Change: <strong>{state.lastAction }</strong> at{" "}
                         <strong>{state.time}</strong>
                     </p>
                 )
