@@ -9,7 +9,7 @@ const Layout = ({children}:LayoutProps) => {
     return (
         <>
             <Header/>
-            <main className="container mx-auto min-h-[calc(100vh-header-height)]">{children}</main>
+            <main className="container mx-auto min-h-[95vh] pt-35">{children}</main>
             <Footer/>
         </>
     )
