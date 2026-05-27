@@ -15,10 +15,10 @@
 // import PreviousValue from "./components/LessonSix/PreviousValue.tsx";
 // import {useEffect} from "react";
 import {Route, Routes} from "react-router";
-import NameChanger from "./components/LessonFive/NameChanger.tsx";
+// import NameChanger from "./components/LessonFive/NameChanger.tsx";
 import HomePage from "./pages/HomePage.tsx";
-import Counter from "./components/LessonFour/Counter.tsx";
-import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
+// import Counter from "./components/LessonFour/Counter.tsx";
+// import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
 import RouterLayout from "./components/RouterLayout.tsx";
 import UserPage from "./pages/UserPage.tsx";
 import SearchPage from "./pages/SearchPage.tsx";
