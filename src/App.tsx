@@ -182,6 +182,7 @@ function App() {
 
           <Route path="products" element={<ProtectedRoute/>}>
             <Route index element={<ProductListPage />} />
+            <Route path="new" element={<ProductPage />} />
             <Route path=":productId" element={<ProductPage />} />
           </Route>
 
