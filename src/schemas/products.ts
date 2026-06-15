@@ -14,8 +14,7 @@ export const productSchema = z.object({
     .string()
     .optional(),
   price: z
-    .number()
-    .nonnegative({error: "Price must be a non-negative number"}),
+    .number(),
   sort: z
     .number()
     .int()
